@@ -1,0 +1,24 @@
+#logo{
+    margin-left: 30px;
+    letter-spacing: 3px;
+}
+#logo::first-letter{
+    color:blue;
+    font-size: 25px;
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 0 10px 0 10px;
+    background-color: aqua;
+    margin-right: 2px;
+}
+#d-block
+{
+    width: 580px;
+    height: 450px;
+}
+.card-deck
+{
+width:1400px;
+height: 600px;
+margin-top: 15px;
+}

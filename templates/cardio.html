@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+    <style>
+        h1
+        {
+            color:darkgreen;
+        }
+        h2
+        {
+            color:gold;
+        }
+    </style>
+</head>
+<body>
+        <h1>Welcome to CARDIO Excerises</h1>
+        <h2>Rules:</h2>
+        <h3>
+            <ol>
+                <li>If your goal is better endurance, do cardio before weights.</li><br>
+                <li>If your goal is burning fat and losing weight, do cardio after weights.</li><br>
+                <li>If you want to get stronger, do cardio after weights.</li><br>
+                <li>On upper-body strength training days, you can do either first.</li>
+            </ol>
+        </h3>
+        <center>
+        <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'menu_card' %}">Done</a></button>
+        </center>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/poper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+
+</body>
+</html>

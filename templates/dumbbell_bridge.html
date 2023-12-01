@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+    <style>
+        h1
+        {
+            color:brown;
+        }
+        h2
+        {
+            color:coral;
+        }
+    </style>
+</head>
+<body>
+        <h1>Welcome to DUMBBELL-BRIDGE Excerises</h1>
+        <h2>Rules:</h2>
+        <h3>
+            <ol>
+                <li>Retract your shoulder blades by pulling your shoulder blades into the bench and pressing through your feet.</li><br>
+                <li>This should create an arch in your lower back, which helps to protect the shoulder joint.</li><br>
+                <li>As you lower the dumbbells, keep the elbows tucked to prevent the elbows from flaring.</li><br>
+                <li>Ensure your wrist is straight and fixed, not bent or cocked to increase your bench press safety.</li><br>
+                <li>It is also important that your grip is one and a half shoulder widths wide.</li><br>
+                <li>As this will prevent undue pressure developing in the wrist and forearm, causing pain.</li>
+            </ol>
+        </h3>
+        <center>
+        <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'menu_card' %}">Done</a></button>
+        </center>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/poper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,344 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+</head>
+<body>
+    <center>
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark orange lighten-1">
+            <a class="navbar-brand" href="#" id="logo">LOKESH GYM</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+              aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link"style="color: blue;" href="{% url 'mdb1' %}">HOME PAGE
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="{% url 'login' %}">LOGIN PAGE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  style="color: blue;" href="{% url 'registration' %}">REGISTRATION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="{% url 'menu_card' %}">MENU CARD</a>
+                  </li>
+                </ul>
+              <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item avatar">
+                  <a class="nav-link p-0" href="#">
+                    <img src="{% static 'images/img1.jpg' %}" class="rounded-circle z-depth-0"
+                      alt="avatar image" height="40">
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <!-- Card deck -->
+<div class="card-deck">
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/Pushups.jpg' %}"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Push-Up</h4>
+      <!--Text-->
+      <p class="card-text">The push-up is a common calisthenics exercise beginning from the prone position. By raising and lowering the body using the arms, push-ups exercise the pectoral muscles, triceps, and anterior deltoids</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'pushup' %}">Select</a></button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/running.jpg' %}"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">RUNNING</h4>
+      <!--Text-->
+      <p class="card-text">Running is a method of terrestrial locomotion allowing humans and other animals to move rapidly on foot. Running is a type of gait characterized by an aerial phase in which all feet are above the ground.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'running' %}">Select</a></button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/dumbbell-bridge.png' %}"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">DUMBBELL-BRIDGE</h4>
+      <!--Text-->
+      <p class="card-text">The dumbbell bridge is a compound weight training exercise in which the individual weight or resistance away from them using their hands.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'dumbbell_bridge' %}">Select</a></button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+</div>
+<!-- Card deck -->
+      
+    </div>
+    <div class="carousel-item">
+      <!-- Card deck -->
+<div class="card-deck">
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/Benchpress.jpg' %}"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">BENCH-PRESS</h4>
+      <!--Text-->
+      <p class="card-text">The bench press, or chest press is a weight training exercise where a person presses a weight upwards while lying horizontally on a weight training bench.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'bench_press' %}">Select</a></button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/Push_down.webp' %}"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">PUSH-DOWN</h4>
+      <!--Text-->
+      <p class="card-text">A push-down is a strength training exercise used for strengthening the triceps muscles in the back of the arm. This exercise can also be called a tricep push-down or a two armed standing tricep extension.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'push_down' %}">Select</a></button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/cardio.jpg' %}"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">CARDIO</h4>
+      <!--Text-->
+      <p class="card-text">cardio and strength machines. This amenity is included in the cost of membership and offers a great opportunity to become familiar with the equipment.
+      </p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'cardio' %}">Select</a></button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+</div>
+<!-- Card deck -->
+
+
+    </div>
+    <div class="carousel-item">
+      <!-- Card deck -->
+<div class="card-deck">
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/Calisthenic.webp' %}"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">CALISTHENICS</h4>
+      <!--Text-->
+      <p class="card-text">Calisthenics or callisthenics is a form of strength training that utilizes an individual's body weight as resistance to perform multi-joint, compound movements with little or no equipment.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'calisthenics' %}">Select</a></button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/floor press.jpg' %}"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">FLOOR-PRESS</h4>
+      <!--Text-->
+      <p class="card-text">Floor press. Image no longer available. This exercise benefits: shoulders, triceps. Lying on your back, hold two dumbbells in each hand in front of your body.</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'floor_press' %}">Select</a></button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class="card mb-4">
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'images/cablecross.jpg' %}"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">CABLE CROSS</h4>
+      <!--Text-->
+      <p class="card-text">The cable crossover is a versatile exercise that's easy to learn and vital to any chest routine. How high you set the cables is all dependent on hand part your body. </p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'cable_cross' %}">Select</a></button>
+
+    </div>
+
+  </div>
+  <!-- Card -->
+
+</div>
+<!-- Card deck -->
+      
+</div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    
+  </center>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/poper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+    
+    <script>
+      $('.carousel').carousel({
+        'interval':2000
+      })
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+    <style>
+        h1
+        {
+            color:cornflowerblue;
+        }
+        h2
+        {
+            color:greenyellow;
+        }
+    </style>
+</head>
+<body>
+        <h1>Welcome to FLOOR-PRESS Excerises</h1>
+        <h2>Rules:</h2>
+        <h3>
+            <ol>
+                <li>Loop the chains over the end of the barbell, and lie down on the floor with your shoulders pulled together and core muscles engaged.</li><br>
+                <li>Lower the bar towards the lower chest while tucking the elbows.</li><br>
+                <li>Continue to lower the barbell till the elbows touch the floor.</li><br>
+                <li>Press the weight back up, and repeat the exercise.</li>
+            </ol>
+        </h3>
+        <center>
+        <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'menu_card' %}">Done</a></button>
+        </center>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/poper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+
+</body>
+</html>

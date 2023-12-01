@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+    <style>
+        h1
+        {
+            color:red;
+        }
+        h2
+        {
+            color:darkorange;
+        }
+    </style>
+</head>
+<body>
+        <h1>Welcome to PUSH-DOWN Excerises</h1>
+        <h2>Rules:</h2>
+        <h3>
+            <ol>
+                <li>Push down until your elbows are fully extended but not yet in the straight, locked position.</li><br>
+                <li>Keep your elbows close to your body and bend your knees slightly on the pushdown.</li><br>
+                <li>Resist bending forward.</li><br>
+                <li>Try to keep your back as straight as possible as you push down.</li>
+            </ol>
+        </h3>
+        <center>
+        <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'menu_card' %}">Done</a></button>
+        </center>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/poper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+
+</body>
+</html>

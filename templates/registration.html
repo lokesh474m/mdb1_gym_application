@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}">
+</head>
+    
+<body>
+    <center>
+        <nav class="mb-1 navbar navbar-expand-lg navbar-dark orange lighten-1">
+            <a class="navbar-brand" href="#" id="logo">LOKESH GYM</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+              aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link"style="color: blue;" href="{% url 'mdb1' %}">HOME PAGE
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="{% url 'login' %}">LOGIN PAGE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  style="color: blue;" href="{% url 'registration' %}">REGISTRATION</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: blue;" href="{% url 'menu_card' %}">MENU CARD</a>
+                  </li>
+                </ul>
+              <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item avatar">
+                  <a class="nav-link p-0" href="#">
+                    <img src="{% static 'images/img1.jpg' %}" class="rounded-circle z-depth-0"
+                      alt="avatar image" height="40">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <form>
+            <h1 style="color: darkorchid;">Registration form</h1>
+            <table class="color" cellpadding="8px" cellspacing="10px">
+                <tr>
+                    <td><label>Name:</label></td>
+                    <td><input type="text" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td><label>Email:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>Phone Number:</label></td>
+                    <td><input type="number" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="1"><label>Gender:</label></td>
+                    <td><input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="grnder">other
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Address:</label></td>
+                        <td><textarea cols="23" rows="2"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>City:</label></td>
+                    <td><input type="text" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td><label>Pin Code:</label></td>
+                    <td><input type="number" max="6"></td>
+                </tr>
+                <tr>
+                    <td><label>STATE:</label></td>
+                    <td><input type="text" maxlength="30"></td>
+                </tr>
+            <tr>
+                <td colspan="3" align="center">
+                  <button class="btn btn-info" type="submit"><a href="{% url 'login' %}">Submit</a></button>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </center>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/poper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+</body>
+</html>

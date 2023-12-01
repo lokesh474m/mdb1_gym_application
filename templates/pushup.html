@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+    <style>
+        h1
+        {
+            color: blue;
+        }
+        h2
+        {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+        <h1>Welcome to PUSH-UP Excerises</h1>
+        <h2>Rules:</h2>
+        <h3>
+            <ol>
+                <li>Keep your back flat in a straight line and engage your abs while performing the exercise.</li><br>
+                <li>Moving your hips up will add a lot of pressure on your shoulders.</li><br>
+                <li>Always start your push-up from the ground.</li><br>
+                <li>Keep your spine straight and engage your core to boost endurance while performing this exercise.</li>
+            </ol>
+        </h3>
+        <center>
+        <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'menu_card' %}">Done</a></button>
+        </center>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/poper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+
+</body>
+</html>

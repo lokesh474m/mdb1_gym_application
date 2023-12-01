@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+    <style>
+        h1
+        {
+            color:hotpink;
+        }
+        h2
+        {
+            color:lightblue;
+        }
+    </style>
+</head>
+<body>
+        <h1>Welcome to BENCH-PRESS Excerises</h1>
+        <h2>Rules:</h2>
+        <h3>
+            <ol>
+                <li>Bench Press lifter must lie on his back with head.</li><br>
+                <li>shoulders and buttocks in contact with the bench surface.</li><br>
+                <li>The feet must be flat on the floor (as flat as the shape of the shoe will allow).</li><br>
+                <li>His hands and fingers must grip the bar positioned in the rack stands with a thumbs around grip.</li>
+            </ol>
+        </h3>
+        <center>
+        <button type="button" class="btn btn-light-blue btn-md"><a href="{% url 'menu_card' %}">Done</a></button>
+        </center>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/poper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/mdb.js' %}"></script>
+
+</body>
+</html>
